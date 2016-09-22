@@ -1,0 +1,12 @@
+# <!-- blog/templates/blog/article_list.html -->
+
+{% extends 'blog/base_blog.html' %}
+
+{% block title %}Blog - Lista de articulos{% endblock title %}
+
+{% block blog_content %}
+    {% for article in articles %}
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.body }}</p>
+    {% endfor %}
+{% endblock blog_content %}

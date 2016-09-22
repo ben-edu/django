@@ -1,0 +1,17 @@
+<!-- blog/templates/blog/_menu.html -->
+
+<div class="bloque-menu">
+    <h4>Ultimos articulos</h4>
+    <hr>
+    {% for articulo in ultimos_articulos %}
+        <a href="#">{{ articulo.title }}</a><br>
+    {% endfor %}
+</div>
+
+<div class="bloque-menu">
+    <h4>Lista de etiquetas</h4>
+    <hr>
+    {% for tag in lista_tags %}
+        <a href="#">{{ tag.name }}</a><br>
+    {% endfor %}
+</div>
